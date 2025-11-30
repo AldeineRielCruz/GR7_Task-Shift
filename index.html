@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskShift - Task Manager & Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+    <div class="container">
+        <div class="Title">
+            <h1>Task-Shift</h1>
+            <h3>A Task Manager And Scheduler</h3>
+            <span id="dateShow"></span>
+            <p id="date2"></p>
+        </div>
+        <div class="to-do">
+            <h2>Task Manager <img src="images/checked.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="inputTask" placeholder="Add Task">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+        </div>
+        <div class="TaskPart"><ul id="list-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul></div>   
+
+    </div>
+    <div>
+        <h2 id="ClockEm"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
